@@ -1,0 +1,103 @@
+body {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.header {
+		margin-left: auto;
+		margin-right: auto;
+    background-color: white;
+}
+
+.navbar-header {
+  padding-top: 10px;
+}
+
+button.navbar-toggle.btn.collapsed {
+  padding-top: 5px;
+  margin-top: 0px;
+}
+.fa-bars {
+  color: black;
+}
+.logo {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 1.5em;
+  text-decoration: none;
+
+}
+.logo:hover {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 1.5em;
+  margin-left: 8%;
+  color: Black;
+  text-decoration: none;
+
+}
+.nav_links>a:hover {
+  background-color: white;
+}
+.navbar .search-container {
+  float: right;
+}
+.navbar-nav.right {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 1.0em;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+.settings {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+.language {
+  text-align: right;
+}
+.language img {
+  height: 20px;
+}
+@media screen and (max-width: 600px) {
+  .navbar .search-container {
+    float: none;
+  }
+.navbar input[type=text], .navbar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    text-align: right;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;
+  }
+  .navbar-collapse.in {
+    overflow-y: visible
+  }
+}
