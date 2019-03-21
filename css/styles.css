@@ -1,5 +1,8 @@
 body {
 	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	/*background-image: url('../images/traffic.png');*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .wrapper {
 	margin-left: auto;
@@ -9,95 +12,54 @@ body {
 .header {
 		margin-left: auto;
 		margin-right: auto;
-    background-color: white;
+    background-color: #534BAE;
+		padding-bottom: 1.0em;
 }
 
 .navbar-header {
-  padding-top: 10px;
-}
-
-button.navbar-toggle.btn.collapsed {
-  padding-top: 5px;
-  margin-top: 0px;
-}
-.fa-bars {
-  color: black;
+  padding-top: 1.0em;
 }
 .logo {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 1.5em;
   text-decoration: none;
+	color: white;
 
 }
-.logo:hover {
+.logo:hover, .logo:active, .logo:focus {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 1.5em;
-  margin-left: 8%;
-  color: Black;
+  color: white;
   text-decoration: none;
 
 }
-.nav_links>a:hover {
-  background-color: white;
-}
-.navbar .search-container {
-  float: right;
-}
-.navbar-nav.right {
-  float: right;
-}
+.content {
+	text-align: center;
+	padding-top: 25%;
 
-.navbar input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 1.0em;
-}
 
-.navbar .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: white;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  color: gray;
 }
-.settings {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: white;
-  font-size: 1.5em;
-  border: none;
-  cursor: pointer;
-  color: gray;
+.heading {
+
 }
-.language {
-  text-align: right;
+.text_heading {
+	color: #534BAE;
+	font-size: 1.8em;
 }
-.language img {
-  height: 20px;
+.btn-group {
+	padding: 0.4em;
+	box-shadow: 0.1em 0.1em 0.5em grey;
+	background-color: white;
+	margin-top: 1.0em;
+
 }
-@media screen and (max-width: 600px) {
-  .navbar .search-container {
-    float: none;
-  }
-.navbar input[type=text], .navbar .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-    text-align: right;
-  }
-  .navbar input[type=text] {
-    border: 1px solid #ccc;
-  }
-  .navbar-collapse.in {
-    overflow-y: visible
-  }
+.input_location {
+	border: none;
+}
+.search {
+	background-color: white;
+	border: none;
+}
+.fa-search {
+	color: #534BAE;
 }
