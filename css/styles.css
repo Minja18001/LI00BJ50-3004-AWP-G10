@@ -9,6 +9,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
+	height: -webkit-fill-available;
 }
 .header {
 		margin-left: auto;
@@ -36,10 +37,16 @@ body {
 }
 .content {
 	text-align: center;
-
 }
-.heading {
-padding-top: 25%;
+
+.parent {
+  height:30em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.child{
+  margin: 0
 }
 .text_heading {
 	color: #534BAE;
@@ -65,7 +72,6 @@ padding-top: 25%;
 }
 footer {
 	text-align:right;
-	margin-top: 5%
 }
 .dropbtn {
   background-color: white;
@@ -85,9 +91,7 @@ footer {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
   background-color: white;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -107,7 +111,7 @@ footer {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+display:inline-block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -116,14 +120,31 @@ footer {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+display:inline-block;
 }
 
 .result {
 	text-align:left;
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
-	padding-top: 10%;
+	padding-top: 5%;
+
+}
+.location {
+	margin-bottom: 1.5em;
+}
+.box {
+	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.left {
+margin-bottom: 1.0em;
+}
+
+.static {
+	font-family: 'Roboto', sans-serif;
+	color: grey;
+	font-size: 0.8em;
 }
 .static img {
 	width: 30em;
@@ -137,6 +158,7 @@ footer {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
 	border-radius: 2.0em;
+	margin-bottom: 1.0em;
 }
 
 .volume {
@@ -145,6 +167,14 @@ footer {
   color: white; /* White text color */
 	border-radius: 2.0em;
 }
+.volume_text {
+	font-family: 'Roboto', sans-serif;
+	color: grey;
+	font-size: 0.8em;
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
 .light {width: 20%; background-color: #00F65A;} /* Green */
 .medium {width: 30%; background-color: #00F65A;} /* Green */
 .medium_plus {width: 50%; background-color: #ffa100;} /* Dark Grey */
@@ -159,5 +189,5 @@ footer {
 }
 .back i {
 	margin-right: 0.6em;
+	margin-bottom: 1.5em;
 }
-
